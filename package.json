@@ -21,7 +21,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "changelogen": "changelogen --output CHANGELOG.md",
-    "release": "bumpp --commit --tag --no-push",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "publish": "pnpm -r publish --access public",
     "prepare": "husky install"
   },
   "devDependencies": {

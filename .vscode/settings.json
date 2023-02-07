@@ -1,0 +1,11 @@
+{
+  "prettier.enable": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "cSpell.words": [
+    "antfu",
+    "commitlint"
+  ]
+}

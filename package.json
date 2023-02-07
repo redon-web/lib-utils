@@ -1,0 +1,46 @@
+{
+  "name": "lib-utils",
+  "version": "0.1.0",
+  "description": "库相关工具测试",
+  "author": "ChenZhaoYu <chenzhaoyu1994@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "*": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:lint-staged": "npx lint-staged",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.1",
+    "@antfu/ni": "^0.19.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "prettier --write"
+    ]
+  }
+}

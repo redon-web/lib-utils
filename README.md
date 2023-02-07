@@ -11,4 +11,4 @@
 
 ### Contributors
 
-- ChenZhaoYu <790348264@qq.com>
+- ChenZhaoYu

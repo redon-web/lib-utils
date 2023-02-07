@@ -1,6 +1,6 @@
 {
   "name": "lib-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "库相关工具测试",
   "author": "ChenZhaoYu <chenzhaoyu1994@gmail.com>",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:lint-staged": "npx lint-staged",
+    "release": "bumpp",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "@antfu/ni": "^0.19.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "bumpp": "^8.2.1",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",

@@ -21,7 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:lint-staged": "npx lint-staged",
-    "release": "bumpp",
+    "release": "bumpp --commit --tag --no-push",
     "prepare": "husky install"
   },
   "devDependencies": {
